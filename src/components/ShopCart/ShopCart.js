@@ -166,7 +166,8 @@ const ShopCart = (props) => {
     
     return (
         <div className={props.show ? [classes.Container, classes.Open].join(' ') : classes.Container}>
-            <div className={classes.Box} style={{top: height + 'px'}} ref={sectionRef}>
+            {/* <div className={classes.Box} style={{top: height + 'px'}} ref={sectionRef}> */}
+            <div className={classes.Box} ref={sectionRef}>
                 <div className={classes.ShopCart}>
                     <img src={exit} alt='Exit' className={classes.Exit} onClick={props.hideShop} />
                     {myBooks}
