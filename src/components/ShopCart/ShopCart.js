@@ -33,7 +33,9 @@ const ShopCart = (props) => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
-        getHeight();
+        if(height !== null) {
+            getHeight();
+        }
         
         gsap.fromTo(sectionRef.current, {opacity: 0, y: '+=20'}, {opacity: 1, y: '-=20', duration: 1, easy: "power4.out", scrollTrigger: {
             trigger: sectionRef.current,
