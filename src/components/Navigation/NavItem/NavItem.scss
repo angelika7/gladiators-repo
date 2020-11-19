@@ -1,0 +1,36 @@
+@import './../../../styles/variables';
+
+.Cta a {
+    background-color: $color-primary;
+    color: $color-grey-1;
+    border-radius: 4px;
+    padding: 14px 24px;
+    border: none;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-decoration: none;
+    margin-right: 32px;
+
+    @media (max-width: 850px) {
+        margin-right: 0;;
+    }
+}
+
+.NavItem {
+    &:not(:last-child) {
+        margin-right: 32px;
+
+        @media (max-width: 850px) {
+            margin-right: 0;;
+        }
+    }
+
+    a:visited, a:active, a {
+        text-decoration: none;
+        color: $color-grey-1;
+    }
+}
+
+.Active {
+    border-bottom: 1px solid $color-black;
+}

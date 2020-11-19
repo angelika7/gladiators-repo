@@ -1,0 +1,76 @@
+@import './../../../styles/variables';
+@import './../../../styles/mixins';
+
+.BurgerBox {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: .5rem !important;
+    right: 2rem !important;
+    background-color: transparent;
+    padding: 1rem;
+    opacity: 1;
+    transform: rotate(0);
+    transition: all .5s;
+    z-index: 9999;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+    @media (max-width: 850px) {
+        @include flex-column;
+        align-items: center;
+        top: 0;
+        right: 0;
+    }
+
+}
+
+.Line {
+    position: absolute;
+    border-radius: 5px;
+    width: 3.5rem;
+    background-color: $color-grey-1;
+    height: 3px;
+    transition: all .3s;
+
+    
+
+    &:nth-child(1) {
+        //top: 1.55rem;
+        top: 1.05rem;
+
+        
+    }
+
+    &:nth-child(2) {
+        //top: 3.05rem;
+        top: 2.15rem;
+
+        
+    }
+
+    &:nth-child(3) {
+        //top: 4.55rem;
+        top: 3.35rem;
+
+        
+    }
+}
+
+.Open span:nth-child(2) {
+    opacity: 0;
+}
+
+.Open span:nth-child(1) {
+    top: 3rem;
+    transform: rotate(135deg);
+}
+
+.Open span:nth-child(3) {
+    top: 3rem;
+    transform: rotate(-135deg);
+}

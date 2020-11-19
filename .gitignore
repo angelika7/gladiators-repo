@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 /.pnp
+/.gitignore
+/package-lock.json
+
 .pnp.js
 
 # testing

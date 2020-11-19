@@ -1,0 +1,56 @@
+.UsersContent {
+    div {
+        p {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        h1 {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 465px) {
+
+        h1 {
+            width: 60%;
+        }
+
+        p {
+            width: 100% !important;
+        }
+    }
+}
+
+.UsersBox {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+    @media (max-width: 1010px) {
+        margin-bottom: 100px;
+    }
+}
+
+.User {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+    
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.IconBox {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    @include flex-center-column;
+}
+
+.Icon {
+    width: 56.5px;
+    height: 56.5px;
+}

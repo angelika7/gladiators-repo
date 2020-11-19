@@ -1,0 +1,109 @@
+@import './../../../styles/mixins';
+
+.Content {
+    @include flex-center-column;
+
+    @media (max-width: 500px) {
+
+        div {
+            h1 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.HeadingBox {
+    @include flex-column;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.TextBox {
+    width: 64%;
+    margin: 0 auto;
+
+    p {
+        text-align: center;
+        line-height: 25.6px;
+
+        &:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        width: 80%;
+    }
+
+    @media (max-width: 465px) {
+        width: 100%;
+    }
+}
+
+.Bold {
+    font-weight: 700;
+}
+
+.ProblemsBox {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px; 
+    margin-bottom: 200px;
+
+    @media (max-width: 1010px) {
+        grid-template-columns: 100%;
+    }
+
+    @media (max-width: 850px) {
+        margin-bottom: 94px;
+    }
+
+}
+
+.FlexEnd {
+    @include flex-row-center;
+    
+    p {
+        text-align: end;
+        margin-right: 16px;
+        height: 100%;
+    }
+}
+
+.FlexStart {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    p {
+        margin-left: 16px;
+    }
+}
+
+.SolutionBox {
+    width: 100%;
+    margin-top: 50px;
+    @include flex-row;
+    justify-content: space-around;
+    margin-bottom: 200px;
+
+    @media (max-width: 700px) {
+        margin-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            &:nth-child(2) {
+                margin: 32px 0;
+            }
+        }
+
+    }
+}

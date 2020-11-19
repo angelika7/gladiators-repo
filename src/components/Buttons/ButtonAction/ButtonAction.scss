@@ -1,0 +1,25 @@
+@import './../../../styles/variables';
+@import './../../../styles/mixins';
+
+.Cta {
+    background-color: $color-primary;
+    color: $color-grey-1;
+    border-radius: 4px;
+    padding: 14px 24px;
+    border: none;
+    font-weight: 700;
+    line-height: 25.6px;
+    @include flex-row-center;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+        background-color: $color-hover;
+    }
+
+    img {
+        margin-left: 18px;
+    }
+}
+

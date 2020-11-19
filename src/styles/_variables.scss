@@ -1,0 +1,39 @@
+// FONT
+$default-font-size: 16px;
+
+//COLORS
+
+$color-primary: #F8DF2A;
+$color-secondary: #34D9EA;
+
+$color-white:  #FFFFFF;
+$color-black: #000000;
+
+$color-grey-1:#1b2029;
+$color-grey-2: #505869;
+$color-grey-3: #868D9C;
+$color-grey-4: #B0B7C5;
+$color-grey-5: #E4E6EA;
+
+$color-bg: #E5E5E5;
+$color-hover: #f1e05c;
+$color-hover-dark: #2c333f;
+$color-dots: #f8d406;
+
+
+
+
+
+
+// Breakpoints
+
+$bp-largest: 125em;     // min. 2000px
+$bp-large: 64em;    // 1024px
+$bp-medium: 60.625em;   // 970px
+$bp-medium-extra: 56.25em;   // 900px
+$bp-small: 53.125em;     // 850px
+$bp-small-extra: 43.125em; // 690px
+$bp-smallest: 37.5em; // 600px
+$bp-mobile-l: 34.375em; // 550px
+$bp-mobile-m: 28.75em; // 460px
+$bp-mobile-s: 23.4375em; // < 375px

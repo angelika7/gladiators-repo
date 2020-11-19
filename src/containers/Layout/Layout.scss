@@ -1,0 +1,131 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Content {
+    display: grid;
+    grid-template-rows: 110px auto 306px;
+    width: 100%;
+}
+
+.Top {
+    width: 54%;
+    margin: 0 auto;
+    @include flex-row;
+    justify-content: flex-end;
+
+    @media (max-width: 1720px) {
+        width: 64%;
+    }
+
+    @media (max-width: 1590px) {
+        width: 80%;
+    }
+
+    @media (max-width: 1260px) {
+        width: 90%;
+    }
+
+    @media (max-width: 1100px) {
+        width: 96%;
+    }
+
+    @media (max-width: 850px) {
+        background-color: none;
+        width: 100%;
+    }
+}
+
+.Layout {
+    display: grid;
+    grid-template-columns: 23% 54% 23%;
+    background-color: $color-white;
+    overflow: hidden; 
+
+    @media (max-width: 1720px) {
+        grid-template-columns: 18% 64% 18%;
+    }
+
+    @media (max-width: 1590px) {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    @media (max-width: 1260px) {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    @media (max-width: 1100px) {
+        grid-template-columns: 2% 96% 2%;
+    }
+}
+
+.Logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 23%;
+    z-index: 99999;
+
+    @media (max-width: 1720px) {
+        left: 18%;
+    }
+
+    @media (max-width: 1590px) {
+        left: 10%;
+    }
+
+    @media (max-width: 1260px) {
+        left: 5%;
+    }
+
+    @media (max-width: 1100px) {
+        left: 2%;
+    }
+
+    @media (max-width: 850px) {
+        top: 24px;
+    }
+}
+
+.DecorRight {
+
+    @media (max-width: 850px) {
+        display: none;
+    }
+
+    &:first-child {
+        margin-top: 400px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 1600px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 3361px;
+        margin-left: -120px;
+
+        @media (max-width: 1720px) {
+            margin-left: 90px;
+        }
+    }
+}
+
+.DecorLeft {
+
+    @media (max-width: 850px) {
+        display: none;
+    }
+
+    &:first-child {
+        margin-top: 1379px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 2096px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 3255.5px;
+    }
+}

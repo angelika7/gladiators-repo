@@ -1,0 +1,15 @@
+@import './../../styles/mixins';
+
+.Solution {
+    @include flex-column;
+    align-items: center;
+    width: 252px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.TextBox {
+    margin-top: 16px;
+}

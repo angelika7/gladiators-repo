@@ -1,0 +1,52 @@
+@import './../../../styles/variables';
+
+.Contact {
+    @media (max-width: 500px) {
+
+        h1 {
+            font-size: 22px;
+        }
+    }
+}
+
+.Content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 100px 0 200px 0;
+
+    @media (max-width: 1010px) {
+        margin: 100px 0 100px 0;
+    }
+
+    @media (max-width: 880px) {
+        grid-template-columns: 100%;
+
+        form {
+            width: 80%;
+            margin: 50px auto 0 auto;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        form {
+            width: 100%;
+
+            &:last-child {
+                input {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+.ImgBox {
+    @media (max-width: 880px) {
+        margin: 0 auto;
+    }
+}
+
+.Underline {
+    text-decoration: underline;
+}

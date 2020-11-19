@@ -1,0 +1,46 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-center {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center-column {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img-100-auto {
+    height: 100%;
+    width: auto;
+}
+
+@mixin absolut-0-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin border-color {
+    
+}
+
+@mixin hoverExit {
+    transform: scale(1);
+    transition: all .2s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

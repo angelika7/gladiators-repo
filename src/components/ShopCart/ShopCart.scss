@@ -1,0 +1,364 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Container {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(27, 32, 41, .7);
+    @include absolut-0-0;
+    position: absolute;
+    top: -100vh;
+    display: none;
+    z-index: 9999;
+    transition: all ,2s;
+} 
+
+.Open {
+    display: flex;
+}
+
+.Box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 620px;
+    @include flex-column;
+
+    @media (max-width: 805px) {
+        width: 90%;
+    }
+}
+
+.ShopCart {
+    width: 100%;
+    border-radius: 4px;
+    background-color: $color-white;
+
+    &:first-child {
+        margin-bottom: 40px;
+    }
+}
+
+.Exit {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 34px;
+    right: 34px;
+    @include hoverExit;
+}
+
+.Top {
+    margin: 32px 32px 16px 32px;
+    display: grid;
+    grid-template-columns: 23% 73%;
+    column-gap: 4%;
+    border-bottom: 1px solid $color-grey-5;
+
+    @media (max-width: 500px) {
+        grid-template-columns: 100%;
+    }
+}
+
+.ImgBox {
+    width: 132.36px;
+    height: 161.41px;
+
+    img {
+        @include img-100-auto;
+    }
+
+    @media (max-width: 500px) {
+        margin: 0 auto 16px auto;
+    }
+}
+
+.RightSide {
+    margin-left: 32px;
+
+    @media (max-width: 805px) {
+        padding-left: 40px;
+    }
+
+    h3 {
+        width: 70%;
+    }
+
+    p {
+        color: $color-grey-2;
+        font-weight: 400;
+        text-align: left;
+        width: 70%;
+    }
+}
+
+.HashesBox {
+    @include flex-row;
+    flex-wrap: wrap;
+    margin: 16px 0 16px 0;
+    width: 90%;
+}
+
+.Hash {
+padding: 4px 8px;
+height: 30px;
+border: 1px solid $color-grey-5;
+margin-bottom: 8px;
+@include flex-row-center;
+
+    &:not(:last-child) {
+        margin-right: 4px;
+    }
+
+    p {
+        color: $color-grey-2;
+        font-weight: 400;
+        width: 100%;
+    }
+}
+
+.PricesBox {
+    @include flex-row;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.AmountBox {
+    padding: 12px;
+    width: 135px;
+    height: 53px;
+
+    border: 1px solid $color-grey-5;
+    border-radius: 4px;
+
+    @include flex-row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 16px;
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+.Form {
+    input {
+        border: 1px solid $color-grey-5;
+        padding: 8px;
+
+        &::placeholder {
+        color: $color-grey-3;
+        font-weight: 400;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: $color-grey-5;
+        }
+    } 
+
+    margin-bottom: 32px;
+}
+
+.Middle {
+    margin-left: 35px;
+
+    p {
+        text-align: start;
+    }
+}
+
+.BoxBuy {
+    @include flex-row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    .Book {
+        flex: 0 0 auto;
+        position: relative;
+        padding: 16px;
+        width: 162px;
+        height: 219.18px;
+    
+        border: 1px solid $color-grey-5;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+    
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+    
+        p {
+            margin-bottom: 4px;
+            text-align: center;
+        }
+    }
+    
+}
+
+.ImgMini {
+    width: 70px;
+    height: 70px;
+    margin: 24px 0 8px 0;
+
+    img {
+        height: 100%;
+    }
+}
+
+.ExitSmall {
+    width: 9.33px;
+    height: 9.33px;
+    position: absolute;
+    top: 19.33px;
+    right: 19.33px;
+    @include hoverExit;
+}
+
+.Bottom {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-end;
+    margin-right: 32px;
+
+    h3 {
+        margin-bottom: 8px;
+    }
+
+    div {
+        margin-bottom: 30px;
+    }
+}
+
+//PAYMENT
+
+.Payment {
+    padding: 32px 32px 0 32px;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    form {
+        margin-top: 16px;
+
+        input {
+            padding-left: 8px;
+
+            input[type=checkbox] {
+                width: 24px;
+                height: 24px;
+            }
+
+            &::placeholder {
+                color: $color-grey-3;
+                font-weight: 400;
+            }
+        
+            &:focus {
+                outline: none;
+                background-color: $color-grey-5;
+            }
+        }
+    }
+}
+
+#pay {
+    margin-bottom: 8px !important;
+}
+
+//CUSTOM CHECKBOX 
+
+.CheckGroup {
+    width: 40px;
+    height: 24px;
+        display: inline-block;
+}
+
+.Checkbox {
+    display: none;
+}
+
+.CheckLabel {
+    cursor: pointer;
+    position: relative !important;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0 !important;
+
+    p {
+        font-weight: 400;
+        margin: -5px 0 0 30px;
+    }
+}
+
+.CheckButton {
+
+    height: 24px;
+    width: 24px;
+    border: 1px solid $color-grey-5;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-grey-1;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+}
+.Checkbox:checked ~ .CheckLabel .CheckButton::after {
+    opacity: 1;
+}
+
+
+////////
+.GitBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+
+    p {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    
+    button {
+        background-color: $color-grey-1;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-hover-dark;
+        }
+    }
+}

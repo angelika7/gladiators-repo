@@ -1,0 +1,42 @@
+@import './../../styles/mixins';
+
+.ButtonBox {
+    margin-top: 24px;
+    @media (max-width: 1010px) {
+        margin: 0 auto;
+
+        button {
+            margin: 0 auto;
+            width: 100%;
+
+        }
+    }
+}
+
+.ImgBox {
+    width: 100%;
+}
+
+.Image {
+    width: 400px;
+    height: 357px;
+}
+
+.LeftSide {
+    @include flex-column;
+    align-items: flex-end;
+
+    @media (max-width: 1010px) {
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        align-self: flex-start;
+
+        @media (max-width: 1010px) {
+            align-self: center;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import './../../../styles/variables';
+@import './../../../styles/mixins';
+
+.NavList {
+    list-style: none;
+    @include flex-row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    @media (max-width: 850px) {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+    }
+}
+
+.Active {
+    border-bottom: 1px solid $color-black;
+}

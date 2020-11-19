@@ -1,0 +1,76 @@
+@import './variables';
+
+.HeadingPrimary {
+    color: $color-grey-1;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    margin-bottom: 24px;
+}
+
+.HeadingSecondary {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33.8px;
+    letter-spacing: -1%;
+    color: $color-grey-1;
+}
+
+.HeadingTertiary {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.BodyLarge {
+    color: $color-grey-2;
+    line-height: 160%;
+}
+
+.BodySmall {
+    color: $color-grey-1;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.TextSmall {
+    font-size: 13px;
+    line-height: 120%;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $color-grey-1;
+}
+
+.Price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $color-grey-1;
+
+    margin: 0 !important;
+}
+
+.Color {
+    color: $color-primary;
+    text-decoration: underline;
+}
+
+.Footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.Newsletter {
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: $color-grey-3;
+}
