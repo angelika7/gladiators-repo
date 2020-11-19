@@ -7,7 +7,7 @@
     background-color: rgba(27, 32, 41, .7);
     @include absolut-0-0;
     position: absolute;
-    top: 20%;
+    top: 0;
     display: none;
     z-index: 9999;
     transition: all ,2s;
@@ -19,6 +19,7 @@
 
 .Box {
     position: absolute;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 620px;
